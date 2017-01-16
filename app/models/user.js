@@ -4,11 +4,17 @@ const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
 
+const festivalSchema = mongoose.model('Festival').schema;
+
 const userSchema = new mongoose.Schema({
   email: {
     type: String,
     unique: true,
     required: true,
+  },
+  comment: {
+    type: [festivalSchema],
+    default: [],
   },
   token: {
     type: String,

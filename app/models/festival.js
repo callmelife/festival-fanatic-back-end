@@ -35,6 +35,10 @@ const festivalSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  comments: {
+    type: String,
+    required: false,
+  },
   _owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
