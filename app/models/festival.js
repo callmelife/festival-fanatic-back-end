@@ -9,19 +9,19 @@ const festivalSchema = new mongoose.Schema({
   },
   description: {
     type: String,
-    required: true,
+    required: false,
   },
   genre: {
     type: String,
-    required: true,
+    required: false,
   },
   location: {
     type: String,
-    required: true,
+    required: false,
   },
   venue: {
     type: String,
-    required: true,
+    required: false,
   },
   url: {
     type: String,
@@ -33,13 +33,21 @@ const festivalSchema = new mongoose.Schema({
   },
   date: {
     type: String,
-    required: true,
+    required: false,
+  },
+  comment: {
+    type: String,
+    required: false,
   },
   _owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true,
   },
+  // owner_email: {
+  //   type: String,
+  //   default: user.credentials.email,
+  // },
 }, {
   timestamps: true,
   toJSON: {

@@ -37,10 +37,10 @@ const create = (req, res, next) => {
 };
 
 const update = (req, res, next) => {
-  delete req.body._owner;  // disallow owner reassignment.
-  req.festival.update(req.body.festival)
-    .then(() => res.sendStatus(204))
-    .catch(next);
+    delete req.body._owner;  // disallow owner reassignment.
+    req.festival.update(req.body.festival)
+      .then(() => res.sendStatus(204))
+      .catch(next);
 };
 
 const destroy = (req, res, next) => {

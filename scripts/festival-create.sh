@@ -2,7 +2,7 @@
 
 API="http://localhost:4741"
 URL_PATH="/festivals"
-TOKEN="ENwpbfKplYaUCyRassGh26CU+WU/78jbJFqEyUAQuAw=--T13W5HnYgmCrxjhqoP5qGwFkiT7/PzYrMpPvEt2OcKY="
+TOKEN="z3JAD+v0+ZO24CX2shMcuMzz80Q3P0LKRj3aQEBKB5Y=--RwNSPbr6fuL+V4gOVjoW3XUbwt0qB4/JHzJTdiBXuTI="
 TITLE="EXAMPLE"
 DESCRIPTION="A gathering of wild animals"
 GENRE="EDM"
