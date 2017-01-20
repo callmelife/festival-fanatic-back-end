@@ -25,6 +25,7 @@ const show = (req, res) => {
 
 const create = (req, res, next) => {
   let festival = Object.assign(req.body.festival, {
+
     _owner: req.user._id,
   });
   Festival.create(festival)
